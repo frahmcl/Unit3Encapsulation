@@ -46,6 +46,9 @@ public class Employee {
     private boolean movedIn;
     private String cubeId;
     private Date orientationDate;
+   //use output for single responsiblity principle
+    //don't use System.out.println();
+   //employee class has no idea or concern how it is outputting
     private OutputService output;
     private final String REQUIRED_MSG = " is mandatory ";
     private final String CRLF = "\n";
@@ -92,6 +95,7 @@ public class Employee {
     // would only do this once, upon being hired. If that were true, this
     // method should not be public. It should only be available to this class
     // and should only be called as part of the larger task of:
+    //use output class to display message
     private void meetWithHrForBenefitAndSalryInfo() {
         metWithHr = true;
         output.simpleOutput(firstName + " " + lastName + " met with Hr on "

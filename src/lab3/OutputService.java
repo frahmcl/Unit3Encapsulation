@@ -11,9 +11,9 @@ public class OutputService {
         System.out.println(msg);
     }
     
-    public void completeOutput(String msg) {
+    public void doOutput(String msg) {
         System.out.println(msg);
-        // sllsdkfjdlkfjdkf
+        // JOptionPane.showMessageDialog(null, msg);
     }
     
 //    private Employee employee;
