@@ -13,15 +13,15 @@ package lab4;
  */
 public class EmployeeReportService {
     private String report = "";
-    
+
     public void addData(String data) {
         report += data;
     }
-    
+
     public void outputReport() {
-        System.out.println(report);
+        JOptionPane.showMessageDialog(null,report);
     }
-    
+
     public void clearReport() {
         report = "";
     }

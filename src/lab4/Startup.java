@@ -11,12 +11,14 @@ package lab4;
  */
 public class Startup {
     public static void main(String[] args) {
+        Company company = new Company();
 
-        Employee employee = new Employee("Peter","Piper","333-33-3333");
-        
-        employee.doFirstTimeOrientation("A101");
-        employee.getReportService().outputReport();
+        // Startup delegates work to Company which then delegates work to HRManager
+        company.hireEmployee("John", "Doe", "444-44-4444");
+
     }
-    
+
+
+}
     
 }
